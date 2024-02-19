@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Transporte</title>
+  <style>
+    /* Estilos para el navbar */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+	.navbar h1 {
+      color: #fff; /* Color blanco para el texto */
+      margin: 0; /* Elimina el margen predeterminado */
+    }
+    .navbar a {
+      color: #f2f2f2;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      padding: 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Estilos para hacer el navbar responsive */
+    @media screen and (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* Estilos para el contenido de la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+      /* Estilos generales */
+      body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Contenedor principal */
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* Imagen de fondo */
+    .background-image {
+      background-image: url('img/reinadelcamino.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px; /* Ajusta la altura según sea necesario */
+      position: relative;
+    }
+
+    /* Contenido sobre la imagen */
+    .content-over-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+
+    /* Estilos para el recuadro de destino de viaje */
+    .destino-viaje {
+      background-color: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+	<div>
+		<h1>TRANSPORTECU</h1>
+	  </div>
+  <div>
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contactos.html">Contacto</a>
+  </div>
+  
+</div>
+
+<!-- Contenido de la página -->
+<div class="container">
+    <!-- Contenedor de la imagen de fondo -->
+    <div class="background-image">
+      <!-- Contenido sobre la imagen de fondo -->
+      <div class="content-over-image">
+        <h1>¡Bienvenido a nuestro sitio de viajes!</h1>
+        <p>Explora destinos increíbles y comienza tu próxima aventura hoy mismo.</p>
+      </div>
+    </div>
+  
+    <!-- Recuadro de destino de viaje -->
+    <div class="destino-viaje">
+      <h2>¿A dónde vamos de viaje?</h2>
+      <p>Encuentra inspiración para tu próximo destino:</p>
+      <!-- Aquí puedes agregar cualquier contenido adicional sobre los destinos de viaje -->
+      <ul>
+        <li>Destino 1</li>
+        <li>Destino 2</li>
+        <li>Destino 3</li>
+        <!-- Agrega más destinos según sea necesario -->
+      </ul>
+    </div>
+  </div>
+
+</body>
+<footer>
+    <p>Copyright © 2023 Viajes, Turismo y Transporte. Todos los derechos reservados.</p>
+</footer>
+</html>
