@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Empresa de Transporte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1e3799;
+        }
+        .question {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .question:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .question h2 {
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: #2c3e50;
+        }
+        .answer {
+            display: none;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Preguntas Frecuentes</h1>
+
+    <div class="question">
+        <h2 onclick="toggleAnswer(1)">¿Cuál es el costo del transporte?</h2>
+        <p class="answer">El costo del transporte varía según la distancia y el tipo de servicio. Puedes consultar nuestros precios en la sección correspondiente de nuestra página web.</p>
+    </div>
+
+    <div class="question">
+        <h2 onclick="toggleAnswer(2)">¿Cuáles son las formas de pago aceptadas?</h2>
+        <p class="answer">Aceptamos pagos en efectivo y tarjetas de crédito/débito. También puedes realizar pagos en línea a través de nuestra plataforma segura de pago.</p>
+    </div>
+
+    <div class="question">
+        <h2 onclick="toggleAnswer(3)">¿Qué medidas de seguridad tienen en cuenta?</h2>
+        <p class="answer">Nos preocupamos por la seguridad de nuestros pasajeros. Todos nuestros conductores están debidamente capacitados y cumplen con las normativas de seguridad vial. Además, realizamos controles regulares de mantenimiento en nuestros vehículos.</p>
+    </div>
+
+    <div class="question">
+        <h2 onclick="toggleAnswer(4)">¿Cómo puedo contactar con servicio al cliente?</h2>
+        <p class="answer">Puedes contactar con nuestro servicio al cliente a través de nuestro número de teléfono gratuito o enviando un correo electrónico a nuestro equipo de atención al cliente. También estamos disponibles en nuestras redes sociales.</p>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(id) {
+        var answer = document.getElementsByClassName('answer')[id - 1];
+        if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+        } else {
+            answer.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
